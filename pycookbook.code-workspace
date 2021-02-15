@@ -1,0 +1,19 @@
+{
+   "folders": [
+      {
+         "path": "/home/jed-xeno/Projects/PyCookbook"
+      }
+   ],
+   "settings": {
+      "cSpell.words": [
+         "EAGAIN",
+         "INET",
+         "RDWR",
+         "cname",
+         "fileno",
+         "htonl",
+         "ntohl",
+         "struct"
+      ]
+   }
+}

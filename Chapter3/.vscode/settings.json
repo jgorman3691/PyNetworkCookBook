@@ -1,0 +1,27 @@
+{
+   "cSpell.words": [
+      "Pythonic",
+      "addrs",
+      "bcast",
+      "dgram",
+      "fcntl",
+      "fileno",
+      "htons",
+      "ifaddresses",
+      "ifname",
+      "inet",
+      "netifaces",
+      "nmap",
+      "nmask",
+      "ntoa",
+      "scapy",
+      "sched",
+      "siocgifaddr",
+      "siocgifconf",
+      "sockios",
+      "sprintf",
+      "stuct",
+      "unans"
+   ],
+   "python.pythonPath": "/bin/python3"
+}

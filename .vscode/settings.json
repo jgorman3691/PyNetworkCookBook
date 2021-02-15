@@ -1,0 +1,21 @@
+{
+   "cSpell.words": [
+      "DGRAM",
+      "RCVBUF",
+      "REUSEADDR",
+      "SNDBUF",
+      "bufsize",
+      "gaierror",
+      "gethostbyname",
+      "getservbyport",
+      "hexlify",
+      "htonl",
+      "htons",
+      "inet",
+      "ntoa",
+      "ntohl",
+      "ntohs",
+      "ntplib"
+   ],
+   "python.pythonPath": "/bin/python3"
+}

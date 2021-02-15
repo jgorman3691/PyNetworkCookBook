@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"errno",
+			"recvfrom",
+			"sendto",
+			"sntp",
+			"struct"
+		]
+	}
+}
