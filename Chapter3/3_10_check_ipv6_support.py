@@ -6,29 +6,30 @@ import netifaces as ni
 
 def inspect_ipv6_support():
    # Find the IPv6 address
-   print("IPv6 support built into Python 3: %s" % socket.has_ipv6)
+   doesIt = socket.has_ipv6
+   print(f"Is IPv6 support built into Python 3: {doesIt}")
    ipv6_addr = {}
    hardware = [i for i in ni.interfaces()]
    for interface in hardware:
-      all_addresses = {family:addrs = [i for i in addrs] for (family,addrs) in ni.ifaddresses(interface)}
-      print("Interface: {}".format(interface))
-      for family,addrs in all_addresses:
+      all_addresses = ni.ifaddresses(interface)
+      print(f"Current Interface: {interface}")
+      for family,addrs in all_addresses.items():
          fam_name = ni.address_families[family]
-         print(' Address family: {}'.format(fam_name))
+         print(f' Address family: {fam_name}')
          for addr in addrs:
             if fam_name == 'AF_INET6':
                ipv6_addr[interface] = addr['addr']
-            print("Address: %s" % addr['addr'])
+            print(f"IPv6 Address: {addr['addr']}")
             nmask = addr.get('netmask', None)
             if nmask:
-               print('Netmask: %s' % nmask)
+               print(f'Netmask: {nmask}')
             bcast = addr.get('broadcast', None)
             if bcast:
-               print('Broadcast: %s' % bcast)
-   if ipv6_addr:
-      print("Found IPv6 address: %s" % ipv6_addr)
-   else:
-      print("No IPv6 interface found!")
+               print(f'Broadcast: {bcast}')
+      if ipv6_addr:
+         print(f"Found IPv6 address: {ipv6_addr}")
+      else:
+         print("No IPv6 interface found!")
       
 if __name__ == '__main__':
    inspect_ipv6_support()

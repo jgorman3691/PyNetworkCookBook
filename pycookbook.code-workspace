@@ -6,14 +6,21 @@
    ],
    "settings": {
       "cSpell.words": [
+         "$matcher := /.*/",
          "EAGAIN",
          "INET",
          "RDWR",
+         "addrs",
          "cname",
+         "ddata",
          "fileno",
          "htonl",
+         "ifaddresses",
+         "netifaces",
          "ntohl",
          "struct"
-      ]
+      ],
+      "python.pythonPath": "/usr/local/bin/python3"
    }
+   
 }

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import argparse
-import os
 import socketserver, socket
 import ssl
 from socketserver import TCPServer

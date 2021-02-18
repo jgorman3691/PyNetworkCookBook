@@ -23,8 +23,8 @@ class HTTPSClient:
       # http_context.options |= ssl.OP_NO_TLSv1_1
 
       # Prepare header
-      conn.request("GET", self.path)
-      #conn.putheader(Host: self.host:self.port)
+      conn.request("GET", self.path, "HTTP/1.1")
+      conn.putheader("Host", self.host, self.port)
       #conn.putheader(Accept: */*)
       #conn.endheaders()
 
